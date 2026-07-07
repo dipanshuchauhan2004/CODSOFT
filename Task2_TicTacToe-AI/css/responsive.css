@@ -1,0 +1,45 @@
+@media(max-width:768px){
+
+.container{
+
+    padding:20px;
+}
+
+.board{
+
+    width:300px;
+
+    height:300px;
+}
+
+.cell{
+
+    font-size:50px;
+}
+
+.scoreboard{
+
+    flex-direction:column;
+}
+
+header h1{
+
+    font-size:30px;
+}
+
+#status{
+
+    font-size:22px;
+}
+
+.controls{
+
+    flex-direction:column;
+}
+
+button{
+
+    width:100%;
+}
+
+}

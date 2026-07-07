@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Image Caption Generator</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>🖼 AI Image Caption Generator</h1>
+
+        <p class="subtitle">
+            Upload an image and let AI generate a caption using BLIP AI.
+        </p>
+
+        <div class="upload-area" id="drop-area">
+
+            <input
+                    type="file"
+                    id="imageInput"
+                    accept="image/*"
+                    hidden>
+
+            <button id="chooseBtn">
+                Choose Image
+            </button>
+
+            <p>OR</p>
+
+            <p>
+                Drag & Drop Image Here
+            </p>
+
+        </div>
+
+        <div class="preview-container">
+
+            <img
+                    id="preview"
+                    src="">
+
+        </div>
+
+        <div class="buttons">
+
+            <button id="generate">
+                Generate Caption
+            </button>
+
+            <button id="copy">
+                Copy
+            </button>
+
+            <button id="download">
+                Download
+            </button>
+
+            <button id="reset">
+                Reset
+            </button>
+
+        </div>
+
+        <div
+                id="loader"
+                class="loader">
+        </div>
+
+        <div class="caption-box">
+
+            <h2>
+
+                Generated Caption
+
+            </h2>
+
+            <p id="caption">
+
+                Your caption will appear here...
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
