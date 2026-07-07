@@ -14,7 +14,10 @@ Steps to open:
 #Task3_Image-Captioning-AI
 
 Steps to open:
-1.unlock the zip file.
-2.open in Vscode Task3_Image-Captioning-AI folder.
-3.go to terminal.
-4.write command python run.py.
+1.open in Vscode Task3_Image-Captioning-AI folder.
+2.go to terminal.
+3.write command pip install flask
+4.write command pip install transformers
+5.write command pip install pillow
+6.write command pip install torch
+7.write command python run.py.
